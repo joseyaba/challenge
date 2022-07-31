@@ -1,0 +1,132 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image{
+    background-image: url("./Images/image-product-desktop.jpg");
+    width: 300px;
+    max-height: 450px;
+    border-radius: 10px 0px 0px 10px;
+    background-size: cover;
+    background-repeat:  no-repeat;
+}
+
+.right{
+    background-color: white;
+    max-width: 300px;
+    height: 370px;
+    padding: 40px ;
+    border-radius: 0px 10px 10px 0px;
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    line-height: 10mm;
+}
+
+.first{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2mm;
+    padding-bottom: 12px;
+}
+
+.second{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 6mm;
+}
+
+.amount{
+    display: flex;
+    align-items: center;
+}
+
+.one{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    padding: 20px 15px 20px 0px
+}
+
+.two{
+    font-family: 'Fraunces', serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    text-decoration-line: line-through;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    border: 0px;
+}
+
+.material-symbols-rounded{
+    padding: 10px 5px 10px 60px
+}
+
+.crt{
+    padding: 10px 60px 10px 5px
+}
+
+
+@media screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image{
+        background-image: url("./Images/image-product-mobile.jpg");
+        width: 500px;
+        height: 300px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .right{
+        text-align: center;
+        margin: 0 auto;
+        min-width: 350px;
+        border-radius: 0px;
+    }
+
+    .amount{
+        justify-content: center;
+    }
+
+    button{
+        margin: 0 auto;
+    }
+    
+}
